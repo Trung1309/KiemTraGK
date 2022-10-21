@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DangNhap_Activity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="3"
+        android:orientation="vertical">
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/footer">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#2ecc71" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/ic_login"
+            android:rotationX="180" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/utm_avobold"
+        android:text="ĐĂNG NHẬP"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_baseline_person_24"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/footer"
+        android:orientation="vertical"
+        android:weightSum="4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="10dp"
+                app:boxCornerRadiusTopStart="10dp"
+                android:hint="Name"
+                app:counterEnabled="true"
+                app:counterMaxLength="20"
+                app:endIconMode="clear_text"
+                app:startIconDrawable="@drawable/txt_person">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_name"
+                    android:background="#ecf0f1"
+                    android:maxLength="20" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="20dp"
+                android:hint="Password"
+                app:endIconMode="password_toggle"
+                app:startIconDrawable="@drawable/txt_pass_lock">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_pass"
+                    android:background="#ecf0f1"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="Nhớ mật khẩu ?" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đăng Nhập"
+                android:id="@+id/btn_dn"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/btn_dn"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:fontFamily="@font/utm_avobold"
+                android:textSize="15sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OR"
+                android:layout_marginTop="10dp"
+                android:textColor="#95a5a6"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="50dp"
+                    android:background="@drawable/google"/>
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/facebook"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_dk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đăng kí tài khoản ?"
+                android:textColor="#2ecc71"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:clickable="true"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

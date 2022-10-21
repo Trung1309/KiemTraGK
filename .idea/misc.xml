@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/DaiHoc/Studies_5/TongHop/app/src/main/res/drawable/bgr_btn_back.xml" value="0.1705" />
+        <entry key="..\:/DaiHoc/Studies_5/TongHop/app/src/main/res/drawable/bgr_nav.xml" value="0.2065" />
+        <entry key="..\:/DaiHoc/Studies_5/TongHop/app/src/main/res/drawable/btn_dn.xml" value="0.1705" />
+        <entry key="..\:/DaiHoc/Studies_5/TongHop/app/src/main/res/drawable/ic_login.xml" value="0.1705" />
+        <entry key="..\:/DaiHoc/Studies_5/TongHop/app/src/main/res/drawable/ic_wave__1_.xml" value="0.1705" />
+        <entry key="..\:/DaiHoc/Studies_5/TongHop/app/src/main/res/drawable/oder_rdu.xml" value="0.194" />
+        <entry key="..\:/DaiHoc/Studies_5/TongHop/app/src/main/res/drawable/txt_pass_lock.xml" value="0.1705" />
+        <entry key="..\:/DaiHoc/Studies_5/TongHop/app/src/main/res/layout/activity_dang_ki.xml" value="0.22282608695652173" />
+        <entry key="..\:/DaiHoc/Studies_5/TongHop/app/src/main/res/layout/activity_dang_nhap.xml" value="0.2" />
+        <entry key="..\:/DaiHoc/Studies_5/TongHop/app/src/main/res/layout/activity_danh_sach.xml" value="0.176" />
+        <entry key="..\:/DaiHoc/Studies_5/TongHop/app/src/main/res/layout/activity_home.xml" value="0.22282608695652173" />
+        <entry key="..\:/DaiHoc/Studies_5/TongHop/app/src/main/res/layout/activity_list_acticity.xml" value="0.25416666666666665" />
+        <entry key="..\:/DaiHoc/Studies_5/TongHop/app/src/main/res/layout/activity_main.xml" value="0.152" />
+        <entry key="..\:/DaiHoc/Studies_5/TongHop/app/src/main/res/layout/activity_profile.xml" value="0.176" />
+        <entry key="..\:/DaiHoc/Studies_5/TongHop/app/src/main/res/layout/activity_san_pham.xml" value="0.152" />
+        <entry key="..\:/DaiHoc/Studies_5/TongHop/app/src/main/res/layout/activity_san_pham_acticity.xml" value="0.25416666666666665" />
+        <entry key="..\:/DaiHoc/Studies_5/TongHop/app/src/main/res/layout/activity_trang_chu.xml" value="0.25416666666666665" />
+        <entry key="..\:/DaiHoc/Studies_5/TongHop/app/src/main/res/layout/dong_menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/DaiHoc/Studies_5/TongHop/app/src/main/res/menu/menu_bar.xml" value="0.25416666666666665" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

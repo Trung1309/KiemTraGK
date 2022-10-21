@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/ic_wave__1_"
+        android:rotationX="180"></View>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txt_phanTram"
+        android:textSize="20sp"
+        android:textColor="#2ecc71"
+        android:textStyle="bold"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="200dp"
+            android:layout_height="15dp"
+            android:id="@+id/card_Loading"
+            android:layout_below="@+id/txt_phanTram"
+            app:cardCornerRadius="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/pr_Loadding"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:scaleY="20"/>
+        </androidx.cardview.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/ic_wave__1_"
+        android:rotationY="-180"></View>
+
+
+</RelativeLayout>

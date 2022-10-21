@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DangNhap_Activity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="3"
+        android:orientation="vertical">
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/footer">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:background="#2ecc71" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/ic_login"
+            android:rotationX="180" />
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="back"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/bgr_btn_back"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/back"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/utm_avobold"
+        android:text="ĐĂNG KÍ TÀI KHOẢN"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/footer"
+        android:orientation="vertical"
+        android:weightSum="4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.5"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="10dp"
+                app:boxCornerRadiusTopStart="10dp"
+                android:textColorHint="#bdc3c7"
+                android:hint="Name"
+                app:counterEnabled="true"
+                app:counterMaxLength="20"
+                app:endIconMode="clear_text"
+                app:startIconDrawable="@drawable/txt_person">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txt_name_dk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ecf0f1"
+                    android:maxLength="20" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="30dp"
+                android:textColorHint="#bdc3c7"
+                android:hint="Password"
+                app:endIconMode="password_toggle"
+                app:startIconDrawable="@drawable/txt_pass_lock">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txt_pass_dk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ecf0f1"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="20dp"
+                android:hint="Cofilm Password"
+                android:textColorHint="#bdc3c7"
+                app:endIconMode="password_toggle"
+                app:startIconDrawable="@drawable/txt_pass_lock">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txt_cfpass_dk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ecf0f1"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.2"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_dk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đăng kí"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/btn_dn"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:fontFamily="@font/utm_avobold"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
